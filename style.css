@@ -1,0 +1,106 @@
+html {
+  font-size: 10px;
+  font-family: arial, sans-serif;
+  text-align: center;
+}
+
+#calculator {
+  width: 450px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: .1rem solid black;
+  border-radius: 2rem;
+  box-shadow: 0 0 2rem gray;
+}
+
+#inputs {
+  background: lightgray;
+  padding: .5rem;
+  border-radius: 1.2rem 1.2rem 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#outputs {
+  background: lightgray;
+  padding: .5rem;
+  border-radius: 0 0 1.2rem 1.2rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+  padding: .5rem;
+  margin: auto;
+}
+
+label {
+  font-size: 2rem;
+}
+
+input {
+  font-size: 2rem;
+  border-radius: 1rem;
+}
+
+input:hover {
+  box-shadow: 0 0 2rem darkgray;
+}
+
+p {
+  font-size: 2rem;
+  padding: .5rem;
+  margin: auto;
+}
+
+.values {
+  display: flex;
+  align-items: baseline;
+  flex: 1 1 auto;
+}
+
+@media (max-width: 449px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+  
+  p {
+    font-size: 1.75rem;
+  }
+
+  label {
+    font-size: 1.75rem;
+  }
+
+  input {
+    font-size: 1.75rem;
+  }
+  
+  #inputs {
+      flex-flow: column wrap;
+  }
+  
+  #calculator {
+    width: auto;
+  }
+}
